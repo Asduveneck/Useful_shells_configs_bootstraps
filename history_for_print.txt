@@ -1,0 +1,20 @@
+Setting up WSL
+
+mkdir /mnt/c/Programming_WSL
+ln -s /mnt/c/Programming_WSL
+
+Setting up Github
+mkdir Git_repos
+cd Git_repos/
+git clone git@github.com:Asduveneck/Private_practice.git
+git clone https://github.com/Asduveneck/algorithm_prep.git
+git clone https://github.com/Asduveneck/Learning-Stuff.git
+git clone https://github.com/Asduveneck/personal_site.git
+code ./
+
+Downloading programming languages
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node --version
+sudo apt-get install software-properties-common
+sudo apt-get install gcc g++ make && sudo apt-get install yarn
