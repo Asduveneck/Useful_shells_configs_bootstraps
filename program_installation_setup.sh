@@ -60,3 +60,11 @@ pip3 install --user docker-compose
 
 # ========================= PostgreSQL 
 # https://medium.com/@harshityadav95/postgresql-in-windows-subsystem-for-linux-wsl-6dc751ac1ff3
+sudo apt-get install postgresql
+
+# starting service
+# sudo service postgresql start
+
+# Connecting to postgres
+# sudo -u postgres ps
+
