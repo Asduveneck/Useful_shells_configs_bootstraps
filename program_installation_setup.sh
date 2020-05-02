@@ -47,13 +47,31 @@ sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
 
 
-#https://cepa.io/2018/02/10/linuxizing-your-windows-pc-part1/
+#https://cepa.io/2018/02/10/linuxizing-your-windows-pc-part1/ # dubious
 # docker ps
 
+# https://pipenv-es.readthedocs.io/es/stable/
+# 
 # Python
 
-# Install Python 3 and PIP.
-sudo apt-get install -y python3 python3-pip
+sudo apt -y purge python-pip # needed to purge. https://github.com/microsoft/WSL/issues/4020
+sudo python -m pip uninstall pip
+sudo apt -y install python-pip
+pip install --upgrade pip
+echo "export PATH=\"${HOME}/.local/bin:$PATH\"" >>"${HOME}"/.bashrc
+
+
+# Dealing with ubuntu issues: https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+python --version # returns 3.6.9 crap
+python3.7 --version # returns what we want. Now we need to set it as a default:
+update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
+
 
 # Install Docker Compose into your user's home directory.
 pip3 install --user docker-compose
