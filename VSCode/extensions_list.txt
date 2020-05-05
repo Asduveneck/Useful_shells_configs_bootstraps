@@ -1,0 +1,18 @@
+In case FUBAR.
+
+Extensions I use:
+
+Atom KeyMap
+Beautify
+Bracket Pair Colorizer 2
+Debugger for Chrome
+ES7 React/Redux/GraphQL/React-Native snippets
+ESLint
+Highlight Matching Tag
+HTML Boilerplate
+HTML Snippets
+JavaScript (ES6) code snippets
+Python
+Reactjs code snippets
+Remote - WSL
+TODO Highlight

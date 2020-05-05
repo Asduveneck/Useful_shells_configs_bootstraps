@@ -1,0 +1,104 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "launch": {
+        "version": "0.2.0",
+        "configuration": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Local Node File",
+                "console": "integratedTerminal",
+                "program": "${file}"
+            },
+            {
+                "name": "Launch index.html",
+                "type:": "chrome",
+                "request": "launch",
+                "file:": "${workspaceFolder}/index.html"
+            }
+        ]
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "terminal.integrated.cwd": "",
+    "terminal.integrated.automationShell.windows": "",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "todohighlight.defaultStyle": {},
+    "todohighlight.isCaseSensitive": false,
+    "todohighlight.keywords": [
+        "REVIEW:",
+        "FINDME:",
+        {
+            "text": "NOTE:",
+            "color": "#ff6f00",
+            "backgroundColor": "",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "HACK:",
+            "color": "#ff6f00",
+            "backgroundColor": "fffd61",
+            "overviewRulerColor": "grey",
+            "isWholeLine": true
+        },
+        {
+            "text": "BUG:",
+            "color": "red",
+            "border": "1px solid red",
+            "borderRadius": "2px",
+            "backgroundColor": "",
+            "isWholeLine": "true"
+        },
+        {
+            "text": "console.log",
+            // "color": "purple",
+            "border": "1px solid purple",
+            "borderRadius": "2px",
+            "backgroundColor": "",
+            "isWholeLine": "true"
+        },
+        // {
+        //     "text": "put",
+        //     "color": "purple",
+        //     "border": "1px solid purple",
+        //     "borderRadius": "2px",
+        //     "backgroundColor": "",
+        //     "isWholeLine": "true"
+        // },
+        {
+            "text": "debugger",
+            // "color": "purple",
+            "border": "1px solid purple",
+            "borderRadius": "2px",
+            "backgroundColor": "",
+            "isWholeLine": "true"
+        }
+    ],
+    "todohighlight.exclude": [
+    
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": null,
+    "markdownlint.config": {
+        "no-hard-tabs": false
+    }
+}
