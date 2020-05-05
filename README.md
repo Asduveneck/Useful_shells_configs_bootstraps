@@ -6,11 +6,11 @@ I'm writing these shell scripts as I create a dev environment on WSL with Ubuntu
 
 ## Dealing with WSL
 
-I'm looking into better principles and installing helper tools. To that end, I have consulted a few articles. If you're using WSL, I recommend:
+I'm looking into better principles and installing helper tools. To that end, I have consulted a few articles. If you're using WSL 1, I recommend:
 
 - [Getting Started](https://medium.com/@janelgbrandon/a-guide-for-using-wsl-for-development-d135670313a6)
 
-The other articles I read below aren't quite as good or they try to help you install programs.
+The other articles I read below aren't quite as good or they aren't as useful to install programs.
 
 - [Lukasz's blog](https://cepa.io/2018/02/10/linuxizing-your-windows-pc-part1/#getting-terminal)
 - [Nick's blog](https://nickjanetakis.com/blog/a-linux-dev-environment-on-windows-with-wsl-docker-tmux-and-vscode)
