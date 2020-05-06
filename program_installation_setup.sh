@@ -19,9 +19,10 @@ sudo apt-get install gcc g++ make && sudo apt-get install yarn
 #                                     Yarn                                     #
 ################################################################################
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn
+# Broken:
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# sudo apt update && sudo apt install yarn
 
 ################################################################################
 #                                  PostgreSQL                                  #
