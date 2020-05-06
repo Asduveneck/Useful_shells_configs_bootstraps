@@ -48,8 +48,14 @@ sudo apt-get update
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get install -y python3.7 python-dev  libpq-dev libssl-dev apt-transport-https ca-certificates curl gnupg-agent python3-pip python3.7-dev
+# If your default Python is higher ( 3.8) uncomment below:
+# sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
 sudo pip3 install pipenv
 sudo apt update
+
+# https://github.com/pypa/pipenv/issues/3488 # shows how to adjust pipenv that works...
+# https://stackoverflow.com/questions/41986507/unable-to-set-default-python-version-to-python3-in-ubuntu # change priority of python
+
 
 ################################################################################
 #                                    Docker                                    #
