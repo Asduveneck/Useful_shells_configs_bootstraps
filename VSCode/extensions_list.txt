@@ -8,6 +8,9 @@ Bracket Pair Colorizer 2
 Debugger for Chrome
 ES7 React/Redux/GraphQL/React-Native snippets
 ESLint
+markdownlint
+GitLens
+Live Share
 Highlight Matching Tag
 HTML Boilerplate
 HTML Snippets
