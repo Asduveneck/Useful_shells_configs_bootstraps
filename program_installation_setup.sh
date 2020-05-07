@@ -49,8 +49,8 @@ sudo apt-get update
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get install -y python3.7 python-dev  libpq-dev libssl-dev apt-transport-https ca-certificates curl gnupg-agent python3-pip python3.7-dev
-# If your default Python is higher ( 3.8) uncomment below:
-# sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
+# If your default Python is not 3.7, maybe consider below:
+# sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2 # breaks dev...
 sudo pip3 install pipenv
 sudo apt update
 
