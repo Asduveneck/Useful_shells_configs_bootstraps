@@ -12,8 +12,8 @@
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 node --version
-sudo apt-get install software-properties-common
-sudo apt-get install gcc g++ make && sudo apt-get install yarn
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y gcc g++ make
 
 ################################################################################
 #                                     Yarn                                     #
@@ -30,13 +30,13 @@ sudo apt-get install gcc g++ make && sudo apt-get install yarn
 
 
 # https://medium.com/@harshityadav95/postgresql-in-windows-subsystem-for-linux-wsl-6dc751ac1ff3
-sudo apt-get install postgresql
+sudo apt-get install -y postgresql
 
-starting service
-sudo service postgresql start
+## starting service
+#sudo service postgresql start
 
-Connecting to postgres
-sudo -u postgres ps
+## Connecting to postgres
+# sudo -u postgres ps
 
 ################################################################################
 #                                    Python                                    #
@@ -64,6 +64,6 @@ sudo apt update
 # https://docs.docker.com/compose/install/ # followed for Linux
 # Docker
 # Install in Windows Ecosystem via: https://hub.docker.com/editions/community/docker-ce-desktop-windows
-
+# below is wonky but from official docs: https://docs.docker.com/compose/install/
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
