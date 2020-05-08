@@ -10,10 +10,10 @@
 
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt-get install -y nodejs npm # need to specify npm on Ubuntu 20.04
 node --version
 sudo apt-get install -y software-properties-common
-sudo apt-get install -y gcc g++ make
+sudo apt-get install -y gcc g++ make  && sudo apt-get install yarn
 
 ################################################################################
 #                                     Yarn                                     #
@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get install -y python3.7 python-dev  libpq-dev libssl-dev apt-transport-https ca-certificates curl gnupg-agent python3-pip python3.7-dev
-# If your default Python is not 3.7, maybe consider below:
+# If your default Python is not 3.7, do NOT consider below:
 # sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2 # breaks dev...
 sudo pip3 install pipenv
 sudo apt update
@@ -61,9 +61,29 @@ sudo apt update
 ################################################################################
 #                                    Docker                                    #
 ################################################################################
+
+# https://docs.docker.com/engine/install/ubuntu/
+
+sudo apt-get -y install \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg-agent \
+  software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Check fingerprint:
+# sudo apt-key fingerprint 0EBFCD88
+
+sudo apt-get update
+
+# Docker Compose:
+
 # https://docs.docker.com/compose/install/ # followed for Linux
 # Docker
 # Install in Windows Ecosystem via: https://hub.docker.com/editions/community/docker-ce-desktop-windows
 # below is wonky but from official docs: https://docs.docker.com/compose/install/
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+sudo apt update
