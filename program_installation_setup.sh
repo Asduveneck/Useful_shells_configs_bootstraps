@@ -73,7 +73,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod 755 /usr/local/bin/docker-compose
-
+echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc # from Nick blog needed to connect to WSL
 # Check fingerprint:
 # sudo apt-key fingerprint 0EBFCD88
 
