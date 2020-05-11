@@ -10,10 +10,10 @@
 
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs npm # need to specify npm on Ubuntu 20.04
+sudo apt-get install -y nodejs # npm # need to specify npm on Ubuntu 20.04
 node --version
 sudo apt-get install -y software-properties-common
-sudo apt-get install -y gcc g++ make  && sudo apt-get install yarn
+sudo apt-get install -y gcc g++ make  && sudo apt-get install -y yarn
 
 ################################################################################
 #                                     Yarn                                     #
@@ -64,14 +64,15 @@ sudo apt update
 
 # https://docs.docker.com/engine/install/ubuntu/
 
-sudo apt-get -y install \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  gnupg-agent \
-  software-properties-common
-
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) \
+     stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod 755 /usr/local/bin/docker-compose
 
 # Check fingerprint:
 # sudo apt-key fingerprint 0EBFCD88
@@ -84,6 +85,6 @@ sudo apt-get update
 # Docker
 # Install in Windows Ecosystem via: https://hub.docker.com/editions/community/docker-ce-desktop-windows
 # below is wonky but from official docs: https://docs.docker.com/compose/install/
-sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo apt update
+# sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# sudo chmod +x /usr/local/bin/docker-compose
+# sudo apt update
