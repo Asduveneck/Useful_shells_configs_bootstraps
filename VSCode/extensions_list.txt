@@ -16,6 +16,7 @@ HTML Boilerplate
 HTML Snippets
 JavaScript (ES6) code snippets
 Python
+Prettier
 Reactjs code snippets
 Remote - WSL
 TODO Highlight
