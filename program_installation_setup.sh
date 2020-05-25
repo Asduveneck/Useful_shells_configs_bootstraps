@@ -93,7 +93,10 @@ sudo apt-get update
 #                                   Cypress                                    #
 ################################################################################
 
-# Had issues with running Cypress originally. Missing the following system files:
-sudo apt-get install -y xvfb 
-# sudo apt-get install -y  libxcursor
+# Had issues with running Cypress originally (from npm install cypress).
+# Official Docs: https://docs.cypress.io/guides/guides/continuous-integration.html#Advanced-setup
+# Missing the following system files:
+sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libx
+tst6 xauth xvfb
+# sudo apt-get install -y  libxcursor # was missing
 sudo apt update
