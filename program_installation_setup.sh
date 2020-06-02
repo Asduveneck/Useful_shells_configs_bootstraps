@@ -96,8 +96,9 @@ sudo apt-get update
 # Had issues with running Cypress originally (from npm install cypress).
 # Official Docs: https://docs.cypress.io/guides/guides/continuous-integration.html#Advanced-setup
 # Missing the following system files:
-sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libx tst6 xauth xvfb
+# sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libx tst6 xauth xvfb
 # https://github.com/cypress-io/cypress/issues/444
 # https://github.com/cypress-io/cypress/issues/444#issuecomment-501744722
 # sudo apt-get install -y  libxcursor # was missing
-sudo apt update
+# sudo apt update
+# Commented out above for Cypress because WSL and GUI and Chromium don't work well together like this... Need a third party server...
