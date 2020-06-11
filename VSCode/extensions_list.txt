@@ -20,3 +20,4 @@ Prettier
 Reactjs code snippets
 Remote - WSL
 TODO Highlight
+Docker
