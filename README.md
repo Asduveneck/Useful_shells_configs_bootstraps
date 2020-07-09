@@ -1,24 +1,9 @@
-# Purpose:
+# Useful Configs, shells, etc
 
-I like to automate a lot of processes, and shorten my most frequently used commands when working with git.
+The goal of this repo is to simplify my developer experience by having useful scripts I use often, and project skeletons so I can start new projects quickly and easily. Useful shells contains a bunch of random scripts I use often, and skeletons contains empty skeletons to easily start small mini projects.
 
-I'm writing these shell scripts as I create a dev environment on WSL with Ubuntu. The goal is for me to recreate my dev environment as painlessly as possible.
+## Background
 
-## Dealing with WSL
+ I started this repo when I was struggling with setting up my dev environment for Ubuntu on WSL1. I blindly followed steps online, broke my environment, and had to do so many wipe outs I decided to just automate the process with shell scripts.
 
-I'm looking into better principles and installing helper tools. To that end, I have consulted a few articles. If you're using WSL 1, I recommend:
-
-- [Getting Started](https://medium.com/@janelgbrandon/a-guide-for-using-wsl-for-development-d135670313a6)
-
-The other articles I read below aren't quite as good or they aren't as useful to install programs.
-
-- [Lukasz's blog](https://cepa.io/2018/02/10/linuxizing-your-windows-pc-part1/#getting-terminal)
-- [Nick's blog](https://nickjanetakis.com/blog/a-linux-dev-environment-on-windows-with-wsl-docker-tmux-and-vscode)
-
-Nick's blog was wrong (perhaps outdated?), so his whole section on docker, failed. Consult the official docs! Be careful with your aliases too!
-
-
-## Official Docs
-
-* [Ubuntu on WSL](https://ubuntu.com/wsl)
-* [Microsoft's WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+Lately, I realize I should practice basic stuff. I shouldn't spend so much time trying to configure the right environment/setup, but rather, focus on coding.
