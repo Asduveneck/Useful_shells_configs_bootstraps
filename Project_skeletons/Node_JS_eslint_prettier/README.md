@@ -2,13 +2,9 @@
 
 Simple skeleton so you can bootstrap a simple Node app. Main code should go into `index.js` and the `src` directory.
 
-To set this skeleton up, just change to this directory, run:
+To set this skeleton up, just change to this directory, and run: `npm install`
 
-```sh
-npm install
-```
-
-  And now you can start coding. Make sure to adjust this README, and adjust the `package.json` as necessary.
+Make sure to adjust this README, and adjust the `package.json` as necessary.
 
 ## Scripts / Commands
 

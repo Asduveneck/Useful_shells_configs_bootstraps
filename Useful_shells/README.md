@@ -19,8 +19,7 @@ The other articles I read below aren't quite as good or they aren't as useful to
 
 Nick's blog was wrong (perhaps outdated?), so his whole section on docker, failed. Consult the official docs! Be careful with your aliases too!
 
-
 ## Official Docs
 
-* [Ubuntu on WSL](https://ubuntu.com/wsl)
-* [Microsoft's WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- [Ubuntu on WSL](https://ubuntu.com/wsl)
+- [Microsoft's WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
