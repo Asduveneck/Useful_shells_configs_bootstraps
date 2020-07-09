@@ -2,7 +2,7 @@
 
 I like to automate a lot of processes, and shorten my most frequently used commands when working with git.
 
-Make sure to `chmod +400` the shell files to run them.
+Make sure to `chmod +x` the shell files to run them.
 
 ## Dealing with WSL
 
