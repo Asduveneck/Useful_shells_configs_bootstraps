@@ -1,23 +1,19 @@
 #!/usr/bin/env bash
 
-if test "$1" = "job-assistant"
-then
-  cd /mnt/c/Programming_WSL/Git_repos/job_assistant
-  git branch && git status && code ./
-elif test "$1" = "js-30"
-then
-  cd /mnt/c/Programming_WSL/Git_repos/JS_30_challenge
-  git branch && git status && code ./
-elif test "$1" = "useful-repo"
-then
-  cd /mnt/c/Programming_WSL/Git_repos/Useful_shells_configs
-  git branch && git status && code ./
-else
-  echo "Please enter a valid option:"
-  echo "
-  option          summary                          full_path         
----------------------------------------------------------------------------------------------       
-  job-assistant   launch vs code   /mnt/c/Programming_WSL/Git_repos/job_assistant
-  js-30           launch vs code   /mnt/c/Programming_WSL/Git_repos/JS_30_challenge
-  useful-repo     launch vs code   /mnt/c/Programming_WSL/Git_repos/Useful_shells_configs"
-fi
+case "$1" in
+  job_assistant | j)
+    cd /mnt/c/Programming_WSL/Git_repos/job_assistant
+    git branch && git status && code ./
+    ;;
+
+  js-30 | 30)
+    cd /mnt/c/Programming_WSL/Git_repos/JS_30_challenge
+    git branch && git status && code ./
+    ;;
+  useful-repo | u)
+    cd /mnt/c/Programming_WSL/Git_repos/Useful_shells_configs
+    git branch && git status && code ./
+    ;;
+  *)
+    cat run_ex_help.txt
+esac

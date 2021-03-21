@@ -1,0 +1,7 @@
+Please enter a valid option
+
+  option          summary                          full_path         
+---------------------------------------------------------------------------------------------       
+  job-assistant   launch vs code   /mnt/c/Programming_WSL/Git_repos/job_assistant
+  js-30           launch vs code   /mnt/c/Programming_WSL/Git_repos/JS_30_challenge
+  useful-repo     launch vs code   /mnt/c/Programming_WSL/Git_repos/Useful_shells_configs
