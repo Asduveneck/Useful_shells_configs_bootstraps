@@ -1,19 +1,28 @@
 #!/usr/bin/env bash
 
+open_full_path () {
+    GIT_REPO_PATH="/mnt/c/Programming_WSL/Git_repos"
+    FULL_PATH=$GIT_REPO_PATH/$1
+    cd $FULL_PATH
+    echo "cd $FULL_PATH"
+    git branch && git status && code ./
+}
+
 case "$1" in
   job_assistant | j)
-    cd /mnt/c/Programming_WSL/Git_repos/job_assistant
-    git branch && git status && code ./
+    open_full_path job_assistant
     ;;
 
   js-30 | 30)
-    cd /mnt/c/Programming_WSL/Git_repos/JS_30_challenge
-    git branch && git status && code ./
+    open_full_path JS_30_challenge
+    # optional: open a new terminal
+    cmd.exe /c start cmd.exe /c ubuntu1804
     ;;
+ 
   useful-repo | u)
-    cd /mnt/c/Programming_WSL/Git_repos/Useful_shells_configs
-    git branch && git status && code ./
+    open_full_path Useful_shells_configs
     ;;
+
   *)
     cat run_ex_help.txt
 esac
