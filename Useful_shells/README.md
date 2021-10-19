@@ -31,8 +31,6 @@ I recommend making something similar to `run_ex`, and once you `chmod a+x run_ex
 
 ### Potential Updates to These Scripts
 
-- Swap out `if-elif-else` for `case switch` instead
-- Avoid using `test $1 = ...`. (currently have env issues)
 - Configure WSL1 or find a way to launch new terminal windows in appropriate directories to then launch the servers.
 
 ## Official Docs
